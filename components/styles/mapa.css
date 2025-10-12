@@ -1,0 +1,25 @@
+.mapadiv{
+    width: 800px;
+    margin-left: -150px;
+}
+
+.mapadiv path{
+    fill: #DCDCDC;
+    stroke: #696969;
+    stroke-width: 2px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.floating-icon {
+    animation: float 2.5s ease-in-out infinite;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
