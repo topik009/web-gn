@@ -68,6 +68,9 @@ export function Footer() {
                                 <li className="mb-2">
                                     <FontAwesomeIcon icon={faMobilePhone} className="text-white mr-3" size="lg"/> +51 936-218-330
                                 </li>
+                                <li className="mb-2">
+                                    <FontAwesomeIcon icon={faMobilePhone} className="text-white mr-3" size="lg"/> +51 900-778-512
+                                </li>
                                 <li>
                                     <FontAwesomeIcon icon={faLocationDot} className="text-white mr-2" size="lg"/> Calle Los Angeles N°148 Chincha-Ica-Lima-Perú
                                 </li>

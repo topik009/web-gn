@@ -2,6 +2,7 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const Top = () => {
     return (
@@ -19,6 +20,10 @@ const Top = () => {
                 <div className="relative cursor-pointer flex justify-center items-center gap-2">
                     <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5 text-white" size="lg" />
                     <span>proyectos@gruponavarro.com.pe</span>
+                </div>
+                <div className="relative cursor-pointer flex justify-center items-center gap-2 mt-2">
+                    <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5 text-white" size="lg" />
+                    <p>+51 933-653-488</p> | <p>+51 900-778-512</p>
                 </div>
             </div>
         </div>
