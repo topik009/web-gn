@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Evita rastreo de carpetas internas (opcional)
+Disallow: /api/
+Disallow: /_next/
+
+# Indica la ubicación del sitemap
+Sitemap: https://gruponavarro.com.pe/sitemap.xml
