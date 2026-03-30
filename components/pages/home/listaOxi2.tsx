@@ -42,7 +42,7 @@ const Notification = ({ name, description, icon, time }: Item) => {
     return (
         <figure
             className={cn(
-                "relative mx-auto min-h-fit w-full max-w-[400px] cursor-pointer overflow-hidden rounded-2xl p-4",
+                "relative mx-auto min-h-fit w-full max-w-100 cursor-pointer overflow-hidden rounded-2xl p-4",
                 // animation styles
                 "transition-all duration-200 ease-in-out hover:scale-[103%]",
                 // light styles
@@ -73,7 +73,7 @@ export function AnimatedListOxi2({className,}: {className?: string;}) {
     return (
         <div
             className={cn(
-                "relative flex h-[500px] w-full flex-col overflow-hidden p-2",
+                "relative flex h-125 w-full flex-col overflow-hidden p-2",
                 className,
             )}
             >
@@ -83,7 +83,7 @@ export function AnimatedListOxi2({className,}: {className?: string;}) {
                 ))}
             </AnimatedList>
 
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background"></div>
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-linear-to-t from-background"></div>
         </div>
     );
 }

@@ -108,7 +108,7 @@ export function ContactoForm({
                         <Label htmlFor="celular">Celular</Label>
                         <Input
                           id="text"
-                          placeholder="936218330"
+                          placeholder="908915408"
                           {...register("celular")}
                         />
                         {errors.celular && (

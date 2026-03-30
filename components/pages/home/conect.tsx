@@ -17,7 +17,7 @@ return (
     <div
     ref={ref}
     className={cn(
-        "flex h-[80px] w-[80px] md:h-[120px] md:w-[140px] items-center justify-center rounded-xl bg-white shadow-md ring-1 ring-black/5 px-1 md:py-0",
+        "flex h-20 w-20 md:h-30 md:w-35 items-center justify-center rounded-xl bg-white shadow-md ring-1 ring-black/5 px-1 md:py-0",
         className
     )}
     title={title}
@@ -52,7 +52,7 @@ const navacord = useRef<HTMLDivElement | null>(null);
 const isMd = useMediaQuery("(min-width: 768px)");
 
 return (
-<div ref={containerRef} className="relative mx-auto w-full max-w-[150px] h-[250px] md:max-w-[400px] md:h-[350px] rounded-2xl bg-white p-6 md:mt-25 md:mb-0 mb-55">
+<div ref={containerRef} className="relative mx-auto w-full max-w-38 h-63 md:max-w-100 md:h-88 rounded-2xl bg-white p-6 md:mt-25 md:mb-0 mb-55">
     <AnimatedBeam
         shape="segments" pattern="hvh"
         containerRef={containerRef}
@@ -96,9 +96,9 @@ return (
 
     <div className="pointer-events-none absolute inset-0 -z-10" />
         <Tile ref={navsa}   title="navsa"   src="/img/navsa.png"        className="absolute -left-20 top-4" />
-        <Tile ref={imnconsa}title="imnconsa"src="/img/imnconsa.png"     className="absolute -left-20 top-[150px] md:top-[200px]" />
+        <Tile ref={imnconsa}title="imnconsa"src="/img/imnconsa.png"     className="absolute -left-20 top-38 md:top-50" />
         <Tile ref={virmaran}  title="virmaran"  src="/img/virmaran.png"       className="absolute -left-20 -bottom-30 md:-bottom-40" />
-        <Tile ref={gn}      title="grupo navarro"      src="/img/logo-gn.png"     className="absolute left-30 md:left-90 top-[150px] md:top-[200px]" />
+        <Tile ref={gn}      title="grupo navarro"      src="/img/logo-gn.png"     className="absolute left-30 md:left-90 top-38 md:top-50" />
         <Tile ref={navacord}      title="navacord"  src="/img/navacord.png"className="absolute left-30 md:left-90 -bottom-30 md:-bottom-40" />
     </div>
 

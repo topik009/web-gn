@@ -22,8 +22,8 @@ const ReviewCard = ({ img, body }: { img: StaticImageData; body: string }) => {
         <figure
         className={cn(
             "relative h-52 w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-            "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-            "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+            "border-gray-950/10 bg-gray-950/1 hover:bg-gray-950/5",
+            "dark:border-gray-50/10 dark:bg-gray-50/10 dark:hover:bg-gray-50/15"
         )}
         >
         <blockquote className="mt-2 text-xl text-center">{body}</blockquote>
@@ -33,7 +33,7 @@ const ReviewCard = ({ img, body }: { img: StaticImageData; body: string }) => {
             alt={body}
             width={180}
             height={180}
-            className="rounded-lg object-cover w-[180px] h-auto"
+            className="rounded-lg object-cover w-45 h-auto"
             />
         </div>
         </figure>
@@ -54,8 +54,8 @@ export function MarqueeHorizontalUno() {
             ))}
             </Marquee>
 
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-linear-to-r from-background" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-linear-to-l from-background" />
         </div>
         </div>
     );

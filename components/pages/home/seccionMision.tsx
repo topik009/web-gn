@@ -4,7 +4,7 @@ import { NumberTicker } from "@/components/magicui/number-ticker";
 export function SeccionMision() {
     return (
         <>
-        <section className="relative bg-orange-100 mx-auto max-w-screen-7xl w-full h-[600px] md:h-96 px-6 md:px-8">
+        <section className="relative bg-orange-100 mx-auto max-w-screen-7xl w-full h-150 md:h-96 px-6 md:px-8">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-x-8 md:ml-50">
                 <div className="text-3xl md:text-4xl text-center md:text-left font-semibold mt-5 mb-10 md:mb-20 md:w-100 md:mt-20">
                     Estamos orgullosos de nuestros trabajos

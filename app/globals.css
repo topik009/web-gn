@@ -225,3 +225,63 @@ html, body {
   width: 100%;
   overflow-x: clip;
 }
+
+.preloader-premium-bg {
+  background-color: var(--azul);
+  background-image:
+    radial-gradient(
+      60% 45% at 18% 22%,
+      color-mix(in srgb, var(--naranja) 34%, transparent),
+      transparent 62%
+    ),
+    radial-gradient(
+      55% 45% at 82% 80%,
+      color-mix(in srgb, white 14%, transparent),
+      transparent 68%
+    ),
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--azul) 78%, black) 0%,
+      var(--azul) 48%,
+      color-mix(in srgb, var(--azul) 86%, white) 100%
+    );
+  animation: preloader-bg-drift 6.5s ease-in-out infinite alternate;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.preloader-premium-overlay {
+  background-image:
+    radial-gradient(
+      70% 50% at 50% 50%,
+      color-mix(in srgb, var(--naranja) 10%, transparent),
+      transparent 72%
+    ),
+    repeating-linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0.05) 0 2px,
+      transparent 2px 20px
+    );
+  mix-blend-mode: soft-light;
+  animation: preloader-veil-breathe 2.6s ease-in-out infinite;
+}
+
+.preloader-logo-shell {
+  width: min(72vw, 440px);
+  max-width: 440px;
+}
+
+.preloader-logo-pulse {
+  animation: preloader-logo-pulse 1.6s ease-in-out infinite;
+  filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.34));
+  transform-origin: center center;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preloader-premium-bg,
+  .preloader-premium-overlay,
+  .preloader-logo-pulse {
+    animation: none !important;
+  }
+}

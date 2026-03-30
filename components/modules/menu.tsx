@@ -1,8 +1,8 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
 import { cn } from "@/lib/utils"
+import { NavigationPreloaderLink as Link } from "@/components/providers/Preloader"
 
 import {
     NavigationMenu,
@@ -74,7 +74,7 @@ return (
                 <NavigationMenuItem>
                     <NavigationMenuTrigger className="text-sm md:text-lg">Nuestros Servicios</NavigationMenuTrigger>
                     <NavigationMenuContent>
-                        <ul className="grid w-[350px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] text-blue-950">
+                        <ul className="grid w-87 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150 text-blue-950">
                             {components.map((component) => (
                             <ListItem
                                 key={component.title}
@@ -89,18 +89,13 @@ return (
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                    <NavigationMenuLink asChild>
-                        <Link
-                        href="#"
-                        onClick={(e) => {
-                            e.preventDefault()
-                            setContactOpen(true) 
-                        }}
-                        className={`${navigationMenuTriggerStyle()} text-sm md:!text-lg`}
-                        >
-                            Contáctanos
-                        </Link>
-                    </NavigationMenuLink>
+                    <button
+                        onClick={() => setContactOpen(true)}
+                        className={`${navigationMenuTriggerStyle()} text-sm md:text-lg cursor-pointer`}
+                        aria-label="Abrir formulario de contacto"
+                    >
+                        Contáctanos
+                    </button>
                 </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>
@@ -121,6 +116,7 @@ return (
             <Link
             href={href}
             ref={ref}
+            title={title}
             className={cn(
                 "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
                 className

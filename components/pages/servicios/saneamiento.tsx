@@ -12,7 +12,7 @@ export default function SaneamientoPagina() {
         <div className="md:mb-10 relative bg-cover bg-bottom bg-no-repeat w-full h-[45vh] md:h-[55vh]" style={{ backgroundImage: "url('/img/s_sana.jpg')" }}>
             <div className="absolute inset-0 bg-black/50 z-10"></div>
 
-            <div className="md:hidden absolute left-0 md:left-70 top-1/2 -translate-y-1/2 w-full md:w-[35rem] md:h-70 flex flex-col md:bg-orange-400 justify-center items-center md:items-start text-center md:text-left px-3 md:px-10 md:py-10 text-white md:shadow-lg z-20">
+            <div className="md:hidden absolute left-0 md:left-70 top-1/2 -translate-y-1/2 w-full md:w-140 md:h-70 flex flex-col md:bg-orange-400 justify-center items-center md:items-start text-center md:text-left px-3 md:px-10 md:py-10 text-white md:shadow-lg z-20">
                 <h1 className="text-3xl font-bold mb-2">
                     Saneamiento Físico Legal de Predios Rústicos y Urbanos
                 </h1>
@@ -23,7 +23,7 @@ export default function SaneamientoPagina() {
 
             <div className="relative grid-cols-2 h-full z-20 hidden md:block">
                 <motion.div
-                    className="absolute left-0 md:left-70 top-1/2 -translate-y-1/2 w-full md:w-[35rem] md:h-70 flex flex-col md:bg-orange-400 justify-center items-center md:items-start text-center md:text-left px-3 md:px-10 md:py-10 text-white md:shadow-lg z-20"
+                    className="absolute left-0 md:left-70 top-1/2 -translate-y-1/2 w-full md:w-140 md:h-70 flex flex-col md:bg-orange-400 justify-center items-center md:items-start text-center md:text-left px-3 md:px-10 md:py-10 text-white md:shadow-lg z-20"
                     initial={{ scaleY: 0 }}
                     animate={{ scaleY: 1 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}

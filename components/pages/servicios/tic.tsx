@@ -53,53 +53,53 @@ const servicios: Servicios[] = [
 ];
 
 export function OrbitingCirclesGN() {
-  return (
-    <div className="relative flex h-[400px] w-full flex-col items-center justify-center overflow-hidden">
-      <OrbitingCircles iconSize={45}>
-        <Icons.ans1 />
-        <Icons.ans2 />
-        <Icons.ans3 />
-        <Icons.ans4 />
-        <Icons.ans5 />
-      </OrbitingCircles>
-      <OrbitingCircles iconSize={40} radius={100} reverse speed={2}>
-        <Icons.ans6 />
-        <Icons.ans7 />
-        <Icons.ans8 />
-        <Icons.ans9 />
-      </OrbitingCircles>
-    </div>
-  );
+    return (
+        <div className="relative flex h-100 w-full flex-col items-center justify-center overflow-hidden">
+        <OrbitingCircles iconSize={45}>
+            <Icons.ans1 />
+            <Icons.ans2 />
+            <Icons.ans3 />
+            <Icons.ans4 />
+            <Icons.ans5 />
+        </OrbitingCircles>
+        <OrbitingCircles iconSize={40} radius={100} reverse speed={2}>
+            <Icons.ans6 />
+            <Icons.ans7 />
+            <Icons.ans8 />
+            <Icons.ans9 />
+        </OrbitingCircles>
+        </div>
+    );
 }
 
 const Icons = {
-  ans1: () => (
-    <Image src={s_tic7} alt=''/>
-  ),
-  ans2: () => (
-    <Image src={s_tic8} alt=''/>
-  ),
-  ans3: () => (
-    <Image src={s_tic9} alt=''/>
-  ),
-  ans4: () => (
-    <Image src={s_tic12} alt=''/>
-  ),
-  ans5: () => (
-    <Image src={s_tic11} alt=''/>
-  ),
-  ans6: () => (
-    <Image src={s_tic10} alt=''/>
-  ),
-  ans7: () => (
-    <Image src={s_tic13} alt=''/>
-  ),
-  ans8: () => (
-    <Image src={s_tic14} alt=''/>
-  ),
-  ans9: () => (
-    <Image src={s_tic15} alt=''/>
-  ),
+    ans1: () => (
+        <Image src={s_tic7} alt=''/>
+    ),
+    ans2: () => (
+        <Image src={s_tic8} alt=''/>
+    ),
+    ans3: () => (
+        <Image src={s_tic9} alt=''/>
+    ),
+    ans4: () => (
+        <Image src={s_tic12} alt=''/>
+    ),
+    ans5: () => (
+        <Image src={s_tic11} alt=''/>
+    ),
+    ans6: () => (
+        <Image src={s_tic10} alt=''/>
+    ),
+    ans7: () => (
+        <Image src={s_tic13} alt=''/>
+    ),
+    ans8: () => (
+        <Image src={s_tic14} alt=''/>
+    ),
+    ans9: () => (
+        <Image src={s_tic15} alt=''/>
+    ),
 };
 
 export default function TicPagina() {
@@ -107,7 +107,7 @@ export default function TicPagina() {
         <>
             <div className="relative bg-cover bg-center bg-no-repeat w-full h-[55vh]" style={{ backgroundImage: "url('/img/s_tic.jpg')" }}>
 
-            <div className="md:hidden absolute left-0 md:left-70 top-1/2 -translate-y-1/2 w-full md:w-[35rem] md:h-70 flex flex-col md:bg-orange-400 justify-center items-center md:items-start text-center md:text-left px-3 md:px-10 md:py-10 text-white md:shadow-lg z-20">
+            <div className="md:hidden absolute left-0 md:left-70 top-1/2 -translate-y-1/2 w-full md:w-140 md:h-70 flex flex-col md:bg-orange-400 justify-center items-center md:items-start text-center md:text-left px-3 md:px-10 md:py-10 text-white md:shadow-lg z-20">
                 <h1 className="text-3xl font-bold mb-2">
                     Tecnologías de la Información y la Comunicación
                 </h1>
@@ -118,7 +118,7 @@ export default function TicPagina() {
 
             <div className="relative grid-cols-2 h-full z-20 hidden md:block">
                     <motion.div
-                        className="absolute left-0 md:left-70 top-1/2 -translate-y-1/2 w-full md:w-[35rem] md:h-70 flex flex-col md:bg-orange-400 justify-center items-center md:items-start text-center md:text-left px-3 md:px-10 md:py-10 text-white md:shadow-lg z-20"
+                        className="absolute left-0 md:left-70 top-1/2 -translate-y-1/2 w-full md:w-140 md:h-70 flex flex-col md:bg-orange-400 justify-center items-center md:items-start text-center md:text-left px-3 md:px-10 md:py-10 text-white md:shadow-lg z-20"
                         initial={{ scaleY: 0 }}
                         animate={{ scaleY: 1 }}
                         transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -152,7 +152,7 @@ export default function TicPagina() {
                         key={s.title}
                         className="relative group overflow-hidden rounded-2xl shadow-sm bg-neutral-100"
                     >
-                        <div className="relative aspect-[4/6] w-full">
+                        <div className="relative aspect-4/6 w-full">
                         <Image
                             src={s.img}
                             alt={s.title}
@@ -162,7 +162,7 @@ export default function TicPagina() {
                         />
                         </div>
 
-                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                        <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
 
                         <div className="absolute inset-x-0 bottom-0 p-5">
                             <h3 className="text-white text-lg font-semibold">{ s.title }</h3>
@@ -188,47 +188,47 @@ export default function TicPagina() {
 
                     <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
                         <div className="space-y-6">
-                          <div className="rounded-2xl bg-white p-6 shadow-[0_8px_24px_rgba(2,8,23,.06)] ring-1 ring-slate-100 hover:ring-slate-200 transition">
-                              <div className="flex items-start gap-4">
-                                <div className="grid h-12 w-12 place-items-center rounded-xl bg-slate-50 ring-1 ring-slate-200">
-                                  <FontAwesomeIcon icon={faClipboardList} size='2xl' className="text-gray-600"/>
+                            <div className="rounded-2xl bg-white p-6 shadow-[0_8px_24px_rgba(2,8,23,.06)] ring-1 ring-slate-100 hover:ring-slate-200 transition">
+                                <div className="flex items-start gap-4">
+                                    <div className="grid h-12 w-12 place-items-center rounded-xl bg-slate-50 ring-1 ring-slate-200">
+                                    <FontAwesomeIcon icon={faClipboardList} size='2xl' className="text-gray-600"/>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="text-lg font-semibold text-gray-950">Diagnóstico y diseño de la solución</h3>
+                                        <p className="mt-1 text-gray-950">
+                                        Analizamos las necesidades de cada cliente, evaluamos su infraestructura actual y definimos la estrategia tecnológica adecuada.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className="flex-1">
-                                    <h3 className="text-lg font-semibold text-gray-950">Diagnóstico y diseño de la solución</h3>
-                                    <p className="mt-1 text-gray-950">
-                                    Analizamos las necesidades de cada cliente, evaluamos su infraestructura actual y definimos la estrategia tecnológica adecuada.
-                                    </p>
-                                </div>
-                              </div>
-                          </div>
+                            </div>
 
-                          <div className="rounded-2xl bg-white p-6 shadow-[0_8px_24px_rgba(2,8,23,.06)] ring-1 ring-slate-100 hover:ring-slate-200 transition">
-                              <div className="flex items-start gap-4">
-                                <div className="grid h-12 w-12 place-items-center rounded-xl bg-slate-50 ring-1 ring-slate-200">
-                                  <FontAwesomeIcon icon={faCode} size='2xl' className="text-gray-600"/>
+                            <div className="rounded-2xl bg-white p-6 shadow-[0_8px_24px_rgba(2,8,23,.06)] ring-1 ring-slate-100 hover:ring-slate-200 transition">
+                                <div className="flex items-start gap-4">
+                                    <div className="grid h-12 w-12 place-items-center rounded-xl bg-slate-50 ring-1 ring-slate-200">
+                                    <FontAwesomeIcon icon={faCode} size='2xl' className="text-gray-600"/>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="text-lg font-semibold text-gray-950">Implementación y desarrollo</h3>
+                                        <p className="mt-1 text-gray-950">
+                                        Ejecutamos el proyecto aplicando metodologías ágiles y las mejores prácticas en tecnología.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className="flex-1">
-                                    <h3 className="text-lg font-semibold text-gray-950">Implementación y desarrollo</h3>
-                                    <p className="mt-1 text-gray-950">
-                                    Ejecutamos el proyecto aplicando metodologías ágiles y las mejores prácticas en tecnología.
-                                    </p>
-                                </div>
-                              </div>
-                          </div>
+                            </div>
 
-                          <div className="rounded-2xl bg-white p-6 shadow-[0_8px_24px_rgba(2,8,23,.06)] ring-1 ring-slate-100 hover:ring-slate-200 transition">
-                              <div className="flex items-start gap-4">
-                                <div className="grid h-12 w-12 place-items-center rounded-xl bg-slate-50 ring-1 ring-slate-200">
-                                  <FontAwesomeIcon icon={faChessKnight} size='2xl' className="text-gray-600"/>
+                            <div className="rounded-2xl bg-white p-6 shadow-[0_8px_24px_rgba(2,8,23,.06)] ring-1 ring-slate-100 hover:ring-slate-200 transition">
+                                <div className="flex items-start gap-4">
+                                    <div className="grid h-12 w-12 place-items-center rounded-xl bg-slate-50 ring-1 ring-slate-200">
+                                    <FontAwesomeIcon icon={faChessKnight} size='2xl' className="text-gray-600"/>
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="text-lg font-semibold text-gray-950">Acompañamiento y optimización continua</h3>
+                                        <p className="mt-1 text-gray-950">
+                                        Brindamos soporte técnico, mantenimiento proactivo y consultoría estratégica.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className="flex-1">
-                                    <h3 className="text-lg font-semibold text-gray-950">Acompañamiento y optimización continua</h3>
-                                    <p className="mt-1 text-gray-950">
-                                    Brindamos soporte técnico, mantenimiento proactivo y consultoría estratégica.
-                                    </p>
-                                </div>
-                              </div>
-                          </div>
+                            </div>
                         </div>
 
                         <div className="relative">

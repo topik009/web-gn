@@ -3,7 +3,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import Image from 'next/image';
 import Logo from '@/public/img/logo-gn.png';
-import Link from "next/link"
+import { NavigationPreloaderLink as Link } from "@/components/providers/Preloader";
 
 const Header = () => {
     return (
@@ -26,7 +26,7 @@ const Header = () => {
             <div className="hidden sm:flex items-center space-x-5 md:mr-70">
                 <div className='text-gray-600'>
                     <p>+51 933-653-488</p>
-                    <p>+51 936-218-330</p>
+                    <p>+51 908-915-408</p>
                     <p>+51 900-778-512</p>
                 </div>
                 <FontAwesomeIcon icon={faWhatsapp} size='xl' className="text-blue-950" />

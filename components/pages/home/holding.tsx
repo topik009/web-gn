@@ -79,7 +79,7 @@ export function Holding() {
                                     pointer-events-none
                                     absolute
                                     -inset-[50%]
-                                    bg-gradient-to-tr from-transparent via-white/50 to-transparent
+                                    bg-linear-to-tr from-transparent via-white/50 to-transparent
                                     rotate-45
                                     translate-y-full
                                     group-hover:-translate-y-full
@@ -121,7 +121,7 @@ export function Holding() {
                                     pointer-events-none
                                     absolute
                                     -inset-[50%]
-                                    bg-gradient-to-tr from-transparent via-white/50 to-transparent
+                                    bg-linear-to-tr from-transparent via-white/50 to-transparent
                                     rotate-45
                                     translate-y-full
                                     group-hover:-translate-y-full
@@ -163,7 +163,7 @@ export function Holding() {
                                     pointer-events-none
                                     absolute
                                     -inset-[50%]
-                                    bg-gradient-to-tr from-transparent via-white/50 to-transparent
+                                    bg-linear-to-tr from-transparent via-white/50 to-transparent
                                     rotate-45
                                     translate-y-full
                                     group-hover:-translate-y-full
@@ -205,7 +205,7 @@ export function Holding() {
                                     pointer-events-none
                                     absolute
                                     -inset-[50%]
-                                    bg-gradient-to-tr from-transparent via-white/50 to-transparent
+                                    bg-linear-to-tr from-transparent via-white/50 to-transparent
                                     rotate-45
                                     translate-y-full
                                     group-hover:-translate-y-full

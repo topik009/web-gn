@@ -1,15 +1,15 @@
-import Link from "next/link";
 import React from "react";
 import Image from 'next/image';
 import Logo from '@/public/img/logo-gn-footer.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faMobilePhone } from "@fortawesome/free-solid-svg-icons";
+import { CurrentYear } from "@/components/modules/current-year";
+import { NavigationPreloaderLink as Link } from "@/components/providers/Preloader";
 
 export function Footer() {
-    const añoActual = new Date().getFullYear();
     return (
         <footer className="bg-blue-950 dark:bg-gray-900 md:pt-10 md:p-0 p-3">
-            <div className="mx-auto w-full max-w-[1500px] py-5 md:py-8">
+            <div className="mx-auto w-full max-w-375 py-5 md:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0 text-center md:text-left">
                         <Link href="/" className="flex items-center mx-auto md:mx-0 w-fit">
@@ -66,7 +66,7 @@ export function Footer() {
                                     <FontAwesomeIcon icon={faMobilePhone} className="text-white mr-3" size="lg"/> +51 933-653-488
                                 </li>
                                 <li className="mb-2">
-                                    <FontAwesomeIcon icon={faMobilePhone} className="text-white mr-3" size="lg"/> +51 936-218-330
+                                    <FontAwesomeIcon icon={faMobilePhone} className="text-white mr-3" size="lg"/> +51 908-915-408
                                 </li>
                                 <li className="mb-2">
                                     <FontAwesomeIcon icon={faMobilePhone} className="text-white mr-3" size="lg"/> +51 900-778-512
@@ -81,7 +81,7 @@ export function Footer() {
                 <hr className="my-6 border-gray-100 sm:mx-auto dark:border-gray-700 lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-gray-100 sm:text-center dark:text-gray-100">
-                        © 2018 - {añoActual}{" "}
+                        © 2018 - <CurrentYear />{" "}
                         <Link href="/" className="hover:underline">
                         Grupo Navarro
                         </Link>

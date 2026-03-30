@@ -84,7 +84,7 @@ export function CarouselNavsa() {
 export function NavsaModal({ open, onOpenChange }: Props) {
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="w-[95vw] sm:!max-w-3xl md:!max-w-5xl lg:!max-w-5xl max-h-auto">
+            <DialogContent className="w-[95vw] sm:max-w-3xl! md:max-w-5xl! lg:max-w-5xl! max-h-auto">
                 <DialogHeader>
                 <DialogTitle>
                     <BoxRevealNavsa/>

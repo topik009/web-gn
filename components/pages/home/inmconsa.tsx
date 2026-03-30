@@ -50,7 +50,7 @@ export function ServiciosInmconsa({ title, src, alt }: CardsInm) {
 export function InmconsaModal({ open, onOpenChange }: Props) {
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="w-[95vw] sm:!max-w-3xl md:!max-w-5xl lg:!max-w-5xl max-h-[95vh]">
+            <DialogContent className="w-[95vw] sm:max-w-3xl! md:max-w-5xl! lg:max-w-5xl! max-h-[95vh]">
                 <DialogHeader>
                     <DialogTitle>
                         <BlurFade delay={0.20} inView>

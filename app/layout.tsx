@@ -7,6 +7,8 @@ import {Footer} from "@/components/modules/footer";
 import "./globals.css";
 import AwasoneConfig from "./awasone";
 import { Toaster } from "@/components/ui/sonner";
+import Script from "next/script";
+import { NavigationPreloaderProvider } from "@/components/providers/Preloader";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -52,6 +54,33 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
       <head>
         <AwasoneConfig/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
+
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "vs3diybbn3");
+          `}
+        </Script>
+
+        <Script 
+          src="https://www.googletagmanager.com/gtag/js?id=G-4CQSKRCTYR" 
+          strategy="afterInteractive" 
+        />
+        
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-4CQSKRCTYR');
+          `}
+        </Script>
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -77,14 +106,17 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
             }),
           }}
         />
+
       </head>
       <body className={poppins.className}>
-        <Top/>
-        <Header/>
-        <Menu/>
-        {children}
-        <Toaster position="top-center" richColors />
-        <Footer/>
+        <NavigationPreloaderProvider>
+          <Top/>
+          <Header/>
+          <Menu/>
+          {children}
+          <Toaster position="top-center" richColors />
+          <Footer/>
+        </NavigationPreloaderProvider>
       </body>
     </html>
   );

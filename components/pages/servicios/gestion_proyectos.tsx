@@ -18,7 +18,7 @@ export default function OxiPagina() {
         <div className="md:mb-20 relative bg-cover bg-center bg-no-repeat w-full h-[45vh] md:h-[55vh]" style={{ backgroundImage: "url('/img/s_consultoria.jpg')" }}>
             <div className="absolute inset-0 bg-black/50 z-10"></div>
 
-            <div className="md:hidden absolute left-0 md:left-70 top-1/2 -translate-y-1/2 w-full md:w-[35rem] md:h-70 flex flex-col md:bg-orange-400 justify-center items-center md:items-start text-center md:text-left px-3 md:px-10 md:py-10 text-white md:shadow-lg z-20">
+            <div className="md:hidden absolute left-0 md:left-70 top-1/2 -translate-y-1/2 w-full md:w-140 md:h-70 flex flex-col md:bg-orange-400 justify-center items-center md:items-start text-center md:text-left px-3 md:px-10 md:py-10 text-white md:shadow-lg z-20">
                 <h1 className="text-3xl font-bold mb-2">
                     Consultoría en Gestión de Proyectos
                 </h1>
@@ -29,7 +29,7 @@ export default function OxiPagina() {
 
             <div className="relative grid-cols-2 h-full z-20 hidden md:block">
                 <motion.div
-                    className="absolute left-0 md:left-70 top-1/2 -translate-y-1/2 w-full md:w-[35rem] md:h-70 flex flex-col md:bg-orange-400 justify-center items-center md:items-start text-center md:text-left px-3 md:px-10 md:py-10 text-white md:shadow-lg z-20"
+                    className="absolute left-0 md:left-70 top-1/2 -translate-y-1/2 w-full md:w-140 md:h-70 flex flex-col md:bg-orange-400 justify-center items-center md:items-start text-center md:text-left px-3 md:px-10 md:py-10 text-white md:shadow-lg z-20"
                     initial={{ scaleY: 0 }}
                     animate={{ scaleY: 1 }}
                     transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -113,7 +113,7 @@ export default function OxiPagina() {
                     Dentro del alcance de la Administración de Contratos, podemos incluir a las siguientes actividades:
                 </h1>
                 <div className='grid grid-cols-1 md:grid-cols-3 mt-20 gap-8 md:gap-0 justify-items-center'>
-                    <Card className="relative w-[350px] overflow-hidden">
+                    <Card className="relative w-87 overflow-hidden">
                         <CardContent>
                             <h1 className='text-2xl text-center'>Acompañamiento durante el proceso de estudio y análisis de riesgos para las estrategias de contratación.</h1>
                         </CardContent>
@@ -130,7 +130,7 @@ export default function OxiPagina() {
                             className="from-transparent via-blue-950 to-transparent"
                         />
                     </Card>
-                    <Card className="relative w-[350px] overflow-hidden">
+                    <Card className="relative w-87 overflow-hidden">
                         <CardContent>
                             <h1 className='text-2xl text-center'>Acompañamiento durante el proceso de licitación.</h1>
                         </CardContent>
@@ -147,7 +147,7 @@ export default function OxiPagina() {
                             className="from-transparent via-blue-950 to-transparent"
                         />
                     </Card>
-                    <Card className="relative w-[350px] overflow-hidden">
+                    <Card className="relative w-87 overflow-hidden">
                         <CardContent>
                             <h1 className='text-2xl text-center'>Acompañamiento en etapa de Ejecución, Monitoreo, Control y Cierre.</h1>
                         </CardContent>
